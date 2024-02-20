@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getelements by classname</title>
+</head>
+<body>
+    <div>
+        <h1 id="title">names</h1>
+        <ul id="names" class="group-names">
+            <li class="li-names">mahesh</li>
+            <li class="li-names">vasu</li>
+            <li class="li-names">naveen</li>
+            <li class="li-names">siva</li>
+        </ul>
+    </div>
+    <script>
+        var li=document.getElementsByTagName('li')
+        console.log(li);
+        console.log(li[1])
+        li[3].style.background='red'
+        li[3].style.color='white'
+        li[3].style.padding='10px'
+        li[2].style.padding='10px'
+        li[2].style.background='blue';
+        li[2].style.color='white'
+    </script>
+</body>
+</html>
