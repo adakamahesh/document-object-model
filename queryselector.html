@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>queryselectors</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1 id="title">this is main page</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt nihil
+          architecto unde sequi vero expedita enim, quaerat in illum molestias
+          provident perspiciatis eius? Excepturi quia molestias, neque
+          necessitatibus nisi soluta
+        </p>
+        <a href="#">mb</a>
+        <br />
+        <br />
+        <input type="text" value="name" />
+        <input type="button" value="submit" />
+      </div>
+      <div>
+        <h1 id="title">names</h1>
+        <ul id="names" class="group-names">
+          <li class="li-names">mahesh</li>
+          <li class="li-names">vasu</li>
+          <li class="li-names">naveen</li>
+          <li class="li-names">siva</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+                       /*queryselectors*/
+    //   var header = document.querySelector("#title");
+    //   console.log(header);
+    //   header.style.color='red'
+    //   var input=document.querySelector('input')
+    //   console.log('input')
+    //   input.value='hello'
+    //   var submit=document.querySelector('input[type="button"]')
+    //   submit.value='send'
+    //   var lists=document.querySelector('.li-names')
+    //   console.log(lists)
+    //   lists.style.color='red'
+    //   var seconditem=document.querySelector('.li-names:nth-child(2)')
+    //   console.log(seconditem)
+    //   seconditem.style.color='coral'
+                     /*queryselectorall*/
+    // var titles=document.querySelectorAll('#title')
+    // console.log(titles)
+    // titles[0].style.background='blue'
+    // titles[0].textContent='mahesh'
+    var odd=document.querySelectorAll('li:nth-child(odd)')
+    var even=document.querySelectorAll('li:nth-child(even)')
+    for(var i=0; i<odd.length; i++){
+        odd[i].style.background='blue'
+        even[i].style.background='#ccc'
+    }
+    </script>
+  </body>
+</html>
