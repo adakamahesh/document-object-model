@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traversing the dom</title>
+</head>
+<body>
+    <div>
+        <div>
+          <h1 id="title">this is main page</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt nihil
+            architecto unde sequi vero expedita enim, quaerat in illum molestias
+            provident perspiciatis eius? Excepturi quia molestias, neque
+            necessitatibus nisi soluta
+          </p>
+          <a href="#">mb</a>
+          <br />
+          <br />
+          <input type="text" value="name" />
+          <input type="button" value="submit" />
+        </div>
+        <div>
+          <h1 id="title">names</h1>
+          <ul id="names" class="group-names">
+            <li class="li-names">mahesh</li>
+            <li class="li-names">vasu</li>
+            <li class="li-names">naveen</li>
+            <li class="li-names">siva</li>
+          </ul>
+        </div>
+      </div>
+      <script>
+        var itemlist=document.querySelector('.group-names')
+        //parentnode
+        // console.log(itemlist.parentNode )
+        // itemlist.parentElement.style.background='blue'
+        // console.log(itemlist.parentElement.parentElement)
+        //childnodes
+        // console.log(itemlist.children)
+        // console.log(itemlist.children[1])
+        // itemlist.children[1].style.background='blue'
+        //first child
+        // console.log(itemlist.firstElementChild)
+        // itemlist.firstElementChild.textContent='mb'
+        //last child
+        console.log(itemlist.lastElementChild)
+        itemlist.lastElementChild.style.background='red'
+      </script>
+</body>
+</html>
