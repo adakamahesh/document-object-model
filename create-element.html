@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create element</title>
+</head>
+<body>
+    <div>
+        <h1 class="content">this is main page</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt nihil
+          architecto unde sequi vero expedita enim, quaerat in illum molestias
+          provident perspiciatis eius? Excepturi quia molestias, neque
+          necessitatibus nisi soluta
+        </p>
+        <a href="#">mb</a>
+        <br />
+        <br />
+        <input type="text" value="name" />
+        <input type="button" value="submit" />
+      </div>
+      <script>
+        //creat a div
+        var newDiv=document.createElement('div')
+        //add class
+        newDiv.className='amb'
+        //add id
+        newDiv.id='mb'
+        //add attribute
+        newDiv.setAttribute('title','mb div')
+        //create text node
+        var newDivText=document.createTextNode('hollo mahesh')
+        //add text to div 
+        newDiv.appendChild(newDivText)
+        var content=document.querySelector('header ,.content')
+        var  h1=document.querySelector('header h1')
+        console.log(newDiv)
+        content.insertBefore(newDiv ,h1)
+        newDiv.style.background='red'
+      </script>
+</body>
+</html>
